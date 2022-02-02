@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+}
+#game{
+    width:600px;
+    height:700px;
+    border:1px solid gray;
+    margin:5px auto;
+    position:relative;
+    overflow:hidden;
+}
+#pipe{
+    width:60px;
+    height:700px;
+    background-color:aqua;
+    position:relative;
+    left:600px;
+    /*animation:pipeMovement 2s infinite linear;*/
+}
+#pipe-space{
+    height:100px;
+    width:60px;
+    background-color:white;
+    left:600px;
+    top:100px;
+    height:250px;
+    position:absolute;
+}
+@keyframes pipeMovement{
+    0%{left:600px;}
+    100%{left:-50px;}
+}
+#character{
+    width:40px;
+    height:40px;
+    background-color:red;
+    position:absolute;
+    top:100px;
+    left:0;
+    border-radius:50%;
+}
+#start{
+
+}
+#finish{
+    display:none;
+}
+.game-text{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:50px;
+}
+.game-text:hover{
+    cursor:pointer;
+}
+#score{
+    position:absolute;
+    left:50%;
+    top:40px;
+    transform: translateX(-50%);
+    font-size:40px;
+    padding:5px;
+    display:none;
+}
+#game-finish-score{
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    margin-top:10px;
+    display:none;
+}
+#best-game-finish-score{
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    margin-top:10px;
+    display:none;
+}
+#restart-game{
+    position:absolute;
+    bottom:-100px;
+    left:50%;
+    transform:translateX(-50%);
+    transition:all .5s;
+}
+#restart-game:hover{
+    color:red;
+}
