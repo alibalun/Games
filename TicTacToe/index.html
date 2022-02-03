@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome Zen Kurenaido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <!-- Font awesome Zen Kurenadio --><!-- font-family: 'Zen Kurenaido', sans-serif; -->
+    
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="before-start">
+            <div class="X">
+                <div class="xi-container">
+                    <div class="xi x-1"></div>
+                    <div class="xi x-2"></div>
+                </div>
+            </div>
+            <div class="O">
+                <div class="oi"></div>
+            </div>
+            <div id="seperator"></div>
+        </div>
+        <div id="difficulity">
+            <div class="dif-level dif-easy" onclick="writeEasy()">Easy</div>
+            <div class="dif-level dif-medium" onclick="writeMedium()">Medium</div>
+            <div class="dif-level dif-hard" onclick="writeHard()">Hard</div>
+        </div>
+        <div id="after-start">
+            <div class="first-line line">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="second-line line">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="third-line line">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div id="winner">
+            <div id="winner-text">Winner</div>
+            <div id="winner-icon"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

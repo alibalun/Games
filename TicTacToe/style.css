@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* Design of game container */
+#game-container{
+    background-color: transparent;
+    width:400px;
+    height:400px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+#before-start{
+    width:270px;
+    height:120px;
+    background-color: white;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+/* Design of seperator */
+#seperator{
+    width:10px;
+    height:100%;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:0;
+    background-color: black;    
+}
+/* Design of X */
+.X{
+    position:relative;
+    width:50%;
+    height:100%;
+    transition:all .4s;
+    background-color: transparent;
+}
+.X:hover{
+    transform:scale(130%);
+    cursor:pointer;
+}
+.xi{
+    position:relative;
+    width:6px;
+    height:100px;
+    background-color: black;
+    border-radius:10px;
+}
+.x-1{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    transform:rotate(40deg);
+}
+.x-2{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    transform:rotate(140deg);
+}
+.xi-container{
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background-color:transparent;
+}
+
+/* Design of O  */
+.O{
+    position:absolute;
+    right:0;
+    top:0;
+    width:50%;
+    height:100%;
+}
+.oi{
+    position:absolute;
+    box-sizing: border-box;
+    width:80px;
+    height:80px;
+    background-color: transparent;
+    border:5px solid black;
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.O{
+    transition:all .4s;
+}
+.O:hover{
+    cursor:pointer;
+    transform:scale(130%);
+}
+
+/* Difficulity area */
+#difficulity{
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background-color:transparent;
+    text-align:center;
+    line-height:50px;
+    display:none;
+}
+.dif-level{
+    font-size:24px;
+    transition:all .4s;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight:bold;
+}
+.dif-level:hover{
+    cursor:pointer;
+    transform:scale(130%);
+}
+
+#after-start{
+    display:none;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.line{
+    display:block;
+    width:350px;
+}
+.box{
+    position:relative;
+    display:inline-block;
+    box-sizing:border-box;
+    width:100px;
+    height:100px;
+    background-color: white;
+    box-shadow:0 0 1px 1px gray;
+    border: 2px solid black;
+}
+.box:hover{
+    cursor:pointer;
+}
+#winner{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:40px;
+    font-family:  'Zen Kurenaido', sans-serif;
+    display:none;
+}
